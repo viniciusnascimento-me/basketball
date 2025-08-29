@@ -33,3 +33,5 @@ function sum3Guest() {
   guestCount += 3;
   guestScore.textContent = guestCount;
 }
+
+render();

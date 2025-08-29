@@ -19,6 +19,7 @@ body {
     align-items: center;
     justify-items: flex-start;
     padding: 14px 18px;
+    transition: box-shadow 0.2s ease;
 }
 
 @font-face {
@@ -67,4 +68,35 @@ button:active {
     color: #1b244a;
     background-color: #9aabd8;
     transform: scale(1.5);
+}
+
+.timer-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    margin: 8px 0 16px;
+}
+
+.timer {
+    font-family: "CursedTimer", monospace;
+    background: #080001;
+    color: var(--digit);
+    font-size: 48px;
+    border-radius: 6px;
+    padding: 6px 12px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.timer.finished {
+    color: #ff5555;
+} /* quando zerar */
+.timer-controls button {
+    background: none;
+    color: #9aabd8;
+    border: 2px solid #9aabd8;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-family: inherit;
 }
